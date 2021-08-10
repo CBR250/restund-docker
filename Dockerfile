@@ -9,10 +9,10 @@ RUN apt-get install g++ patch make curl -y
 RUN mkdir /re
 RUN mkdir /restund
 
-RUN curl -O "http://www.creytiv.com/pub/restund-0.4.12.tar.gz"
+RUN curl -O "https://ftp.fau.de/macports/distfiles/restund/restund-0.4.12.tar.gz"
 RUN tar --strip-components=1 -xf restund-0.4.12.tar.gz -C /restund
 
-RUN curl -O "http://www.creytiv.com/pub/re-0.4.15.tar.gz"
+RUN curl -O "www.mirrorservice.org/sites/distfiles.macports.org/libre/re-0.4.15.tar.gz"
 RUN tar --strip-components=1 -xf re-0.4.15.tar.gz  -C /re
 
 ADD . /restund
